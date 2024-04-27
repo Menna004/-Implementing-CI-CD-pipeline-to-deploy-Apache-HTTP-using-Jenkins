@@ -1,0 +1,20 @@
+- name: Install and Configure http
+  hosts: vm3
+  become: true
+  tasks:
+    - name: Install httpd package
+      yum:
+        name: httpd
+        state: present
+
+    - name: Enable httpd service
+      service:
+        name: httpd
+        state: started
+
+    - name: Add ports to firewall
+      firewalld:
+       port: 80/tcp
+       state: enabled
+       immediate: true
+       permanent: true
