@@ -1,5 +1,4 @@
-# Mennatallah-Abdelhamid
-- Install and Configure Apache HTTP Server
+### Install and Configure Apache HTTP Server
 
   This Ansible playbook automates the installation and configuration of Apache HTTP Server on target hosts. 
 
@@ -9,32 +8,32 @@
 
 - make directory to contain the playbook
 
-  mkir project
+  `mkdir project`
 
 - Navigate to the directory 
 
-  cd project
+  `cd project`
 
 - Clone this repository to your local machine
 
-  git clone https://github.com/manoosh44/Mennatallah-Abdelhamid/blob/main/WebServerSetup.yml
+  `git clone https://github.com/manoosh44/Mennatallah-Abdelhamid/blob/main/WebServerSetup.yml`
 
 - create the inventory file (inventory_file) to specify the target hosts and their connection details the same directory
    
-   [vm3]
+   `[vm3]
    
-   192.168.1.9
+   192.168.1.9`
    
 - Ping the remote host to check the connectivity
 
-  ansible -i inventory_file vm3 -m ping
+  `ansible -i inventory_file vm3 -m ping`
 
 - Run the playbook using the ansible-playbook command
 
-  ansible-playbook -i inventory_file  WebServerSetup.yml
+  `ansible-playbook -i inventory_file  WebServerSetup.yml`
 
---------------------------------------------------------------------------------------------------------------------------------------
-- Jenkins pipeline configuration
+
+### Jenkins pipeline configuration
 
   This Jenkins pipeline automates the process of checking out a Git repository, executing an Ansible playbook, and sending an email 
   notification in case of pipeline failure.
@@ -78,7 +77,7 @@
   vaultTmpPath: '': Specify the path to the Ansible vault temporary directory.
 
 
-- Email Jenkins Pipeline
+  ### Email Jenkins Pipeline
    
   This stage sends an email notification in case of pipeline failure.Use a scripted pipeline (script block) to customize the email 
   content.
