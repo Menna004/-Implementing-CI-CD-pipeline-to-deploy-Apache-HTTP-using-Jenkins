@@ -1,5 +1,6 @@
 
-![image](https://github.com/Menna004/-Implementing-CI-CD-pipeline-to-deploy-Apache-HTTP-using-Jenkins/assets/88343123/9b07a752-a3c3-4ca1-88fa-0c416a7ddee5)
+![image](https://github.com/Menna004/-Implementing-CI-CD-pipeline-to-deploy-Apache-HTTP-using-Jenkins/assets/88343123/1ceb510f-7e01-47ba-be89-091a6e04fc67)
+
 
 ### Install and Configure Apache HTTP Server
 
