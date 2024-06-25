@@ -1,3 +1,6 @@
+
+![image](https://github.com/Menna004/-Implementing-CI-CD-pipeline-to-deploy-Apache-HTTP-using-Jenkins/assets/88343123/9b07a752-a3c3-4ca1-88fa-0c416a7ddee5)
+
 ### Install and Configure Apache HTTP Server
 
   This Ansible playbook automates the installation and configuration of Apache HTTP Server on target hosts. 
